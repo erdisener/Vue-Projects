@@ -2,7 +2,7 @@
     <h3 class="bg-blue text-white">
         Blue components
     </h3>
-    <input type="text"/>
+    <input type="text"></input>
 </template>
 
 <script>
