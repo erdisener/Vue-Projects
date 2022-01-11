@@ -8,6 +8,8 @@
     <ul v-if="ItemList.length > 0" >
       <li v-for="item in ItemList" :key="item.id" class="d-flex justify-content-between align-items-center">
         <span> {{item.title}} </span>
+       <!--  <img :src="item.img" alt=""> -->
+       <img :src="item.img" >
         <button @click="onDelete(item)" class="sm red">Sil</button>
       </li>
     </ul>

@@ -499,10 +499,6 @@ body #app select {
   border-radius: 5px;
 }
 
-body #app img {
-  width: 50%;
-}
-
 body #app button {
   border: none;
   padding: 5px 10px;
