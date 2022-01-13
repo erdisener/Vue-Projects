@@ -1,0 +1,22 @@
+{
+  "bookmarks": [
+    {
+      "title": "başlık1",
+      "url": "http://ocalis.com.tr",
+      "description": "dfdfdsfdsfds",
+      "id": 1
+    },
+    {
+      "title": "başlık başlık",
+      "url": "baslik.com",
+      "description": "slşdsadlşasşldas",
+      "id": 3
+    },
+    {
+      "title": "dfdfds",
+      "url": "fdsdfds",
+      "description": "fsfds",
+      "id": 4
+    }
+  ]
+}
