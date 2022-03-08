@@ -4,11 +4,11 @@
             <form @submit.prevent="submit">
                 <div>
                     <label for="email">Eposta:</label>
-                    <input type="text" name="email" v-model="form.email">
+                    <input type="email" name="email" id="email" v-model="form.email">
                 </div>
                 <div>
                     <label for="password">Şifre:</label>
-                    <input type="password" name="password" v-model="form.password">
+                    <input type="password" autocomplete="current-password" id="current-password" name="password" v-model="form.password">
                 </div>
                 <button type="submit">Giriş</button>
             </form>
@@ -31,7 +31,7 @@ export default {
                 email: "",
                 password: "",
             },
-            showError: false
+            showError: false,
         };
     },
 
@@ -44,7 +44,7 @@ export default {
             try {
                 await this.LogIn(User);
                 this.$router.push("/posts");
-                this.showError = false
+                this.showError = false;
             } catch(error) {
                 this.showError = true
             }

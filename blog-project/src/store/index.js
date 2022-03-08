@@ -13,7 +13,7 @@ export default new Vuex.Store({
   actions: {
   },
   modules: {
-    auth
+    auth,
   },
-  plugins: [createPersistedState()]
+  plugins: [createPersistedState()],
 });

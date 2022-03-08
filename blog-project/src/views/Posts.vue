@@ -60,18 +60,15 @@ export default {
   methods: {
     ...mapActions(["CreatePost", "GetPosts"]),
     async submit() {
-      try {
+      
         let postData = new FormData();
         postData.append("post_title", this.form.post_title);
         postData.append("post_content", this.form.post_content);
         postData.append("post_date", this.form.post_date);
         let result = await this.CreatePost(postData);
         console.log(result.data);
+         await this.CreatePost(this.form);
 
-      } catch (error) {
-        throw "Üzgünüz, şu anda blog ekleyemiyorsunuz!";
-      }
-      
     },
   
   },
